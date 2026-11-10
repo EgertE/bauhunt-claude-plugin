@@ -18,7 +18,7 @@ the plugin's Connectors tab and sign in with your BauHunt account.
 In Claude Code:
 
 ```
-claude plugin marketplace add <this repository>
+claude plugin marketplace add EgertE/bauhunt-claude-plugin
 claude plugin install bauhunt@bauhunt
 ```
 

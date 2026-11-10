@@ -9,6 +9,7 @@
     "url": "https://bauhunt.ee"
   },
   "homepage": "https://bauhunt.ee/integrations/mcp",
+  "repository": "https://github.com/EgertE/bauhunt-claude-plugin",
   "keywords": [
     "construction",
     "materials",
