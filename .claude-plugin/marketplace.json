@@ -1,0 +1,15 @@
+{
+  "name": "bauhunt",
+  "owner": {
+    "name": "BauHunt",
+    "email": "hunt@bauhunt.ee"
+  },
+  "description": "BauHunt construction-material quotes for Claude.",
+  "plugins": [
+    {
+      "name": "bauhunt",
+      "source": "./",
+      "description": "Prepare construction-material quote requests, manage buying wishes and compare supplier offers in Estonia."
+    }
+  ]
+}

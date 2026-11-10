@@ -1,0 +1,24 @@
+{
+  "name": "bauhunt",
+  "displayName": "BauHunt",
+  "version": "1.0.0",
+  "description": "Prepare construction-material quote requests, manage buying wishes and compare supplier offers in Estonia.",
+  "author": {
+    "name": "BauHunt",
+    "email": "hunt@bauhunt.ee",
+    "url": "https://bauhunt.ee"
+  },
+  "homepage": "https://bauhunt.ee/integrations/mcp",
+  "keywords": [
+    "construction",
+    "materials",
+    "quotes",
+    "suppliers",
+    "Estonia"
+  ],
+  "icon": "./logo.png",
+  "documentationUrl": "https://bauhunt.ee/integrations/mcp",
+  "supportUrl": "https://bauhunt.ee/contact",
+  "privacyPolicyUrl": "https://bauhunt.ee/privacy",
+  "termsOfServiceUrl": "https://bauhunt.ee/terms"
+}

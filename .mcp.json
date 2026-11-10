@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "bauhunt": {
+      "type": "http",
+      "url": "https://bauhunt.ee/mcp"
+    }
+  }
+}
