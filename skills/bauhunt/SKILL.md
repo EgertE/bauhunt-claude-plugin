@@ -59,8 +59,12 @@ contact details.
    request), flexible (an open buying wish, no request is sent to suppliers) or
    budget (price information only). For pure price research, suggest the price
    overview at https://bauhunt.ee/cost-calculator first.
-4. Use `locations_search` for the delivery address and save only the choice the
-   user picked.
+4. Use `locations_search` for the delivery place, anywhere in Europe: pass the
+   address text and, when the user said it, the country code. Never pass or
+   invent coordinates. Save only the choice the user picked. Choices outside
+   Estonia are a locality or postal code, not a verified street address. When
+   a choice says `served: false`, tell the user plainly that BauHunt does not
+   send requests to that area yet; the draft is kept.
 5. Save with `request_draft_save`, keep working on the same draft, then call
    `request_preview` and report its actual readiness and saved revision.
    Where the app supports it, the preview is shown as a card. Its buttons only
