@@ -60,9 +60,11 @@ contact details.
 6. Call `request_submit` only when the user explicitly asks to send, after you
    have shown the current saved revision and summary and the user has accepted
    the current terms. Connecting the account or starting a chat is not consent.
-7. Later, use `requests_list` and `offers_compare`. Show totals with VAT and
-   delivery, and list missing rows. Never present a partial basket as the
-   cheapest complete offer, and never promise stock.
+7. Later, use `requests_list` and `offers_compare` (also when the user pastes
+   the sentence from BauHunt's offer e-mail). For every seller say from its
+   `summary` who, when and the total with VAT and delivery, and list missing
+   rows. Say unknown for a missing value, never zero. Never present a partial
+   basket as the cheapest complete offer, and never promise stock.
 
 ## Supplier
 
