@@ -99,7 +99,18 @@ contact details.
 6. Call `request_submit` only when the user explicitly asks to send, after you
    have shown the current saved revision and summary and the user has accepted
    the current terms. Connecting the account or starting a chat is not consent.
-7. Later, use `requests_list` and `offers_compare` (also when the user pastes
+7. After sending, read `followUp` in the result. BauHunt e-mails the buyer
+   about each offer and cannot post into this chat by itself. If you can
+   create scheduled tasks or reminders, offer one in plain words ("Shall I
+   check your offers at 15:00?") and create it only when the buyer agrees; the
+   scheduled run calls `offer_updates` with `followUp.checkArguments` and says
+   what changed. If you cannot schedule, say the e-mail will come and the buyer
+   can ask "any new offers?" at any time. Never promise a phone notification.
+8. When the buyer asks whether anything new arrived, use `offer_updates`
+   (pass `since` from the previous check's `nextCheckArguments`); it lists only
+   new and changed offers, declines and quick answers, and may repeat one from
+   the last check, so mention each only once. Then use `requests_list` and
+   `offers_compare` (also when the user pastes
    the sentence from BauHunt's offer e-mail). For every seller say from its
    `summary` who, when and the total with VAT and delivery, and list missing
    rows. Say unknown for a missing value, never zero. Never present a partial
