@@ -9,7 +9,7 @@
     {
       "name": "bauhunt",
       "source": "./",
-      "description": "Prepare construction-material quote requests, manage buying wishes and compare supplier offers in Estonia."
+      "description": "Ask suppliers for construction-material quotes from your AI chat and compare their offers with delivery, VAT and delivery time. Live in Estonia; more European countries follow."
     }
   ]
 }

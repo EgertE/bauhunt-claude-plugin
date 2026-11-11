@@ -1,7 +1,8 @@
 # BauHunt for Claude
 
-BauHunt helps builders in Estonia turn a construction-material list into a
-quote request, keep a future buying wish open and compare supplier offers
+BauHunt helps builders in Europe turn a construction-material list into a
+quote request (requests are sent to suppliers in Estonia today; more countries
+follow), keep a future buying wish open and compare supplier offers
 including VAT and delivery. Authorized suppliers can prepare offers and browse
 open buying wishes.
 

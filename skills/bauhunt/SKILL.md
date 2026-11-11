@@ -1,12 +1,14 @@
 ---
 name: bauhunt
-description: Use when the user wants prices or quotes for construction materials in Estonia, has a material list (typed, photographed or dictated) to send to suppliers (ehitusmaterjalide hinnapäring, pakkumised, materjalinimekiri, ostusoov), wants to compare supplier offers with VAT and delivery, or is a supplier answering a BauHunt request or browsing open buying wishes.
+description: Use when the user wants prices or quotes for construction materials in Europe (requests are sent to suppliers in Estonia today; more countries follow), has a material list (typed, photographed or dictated) to send to suppliers (ehitusmaterjalide hinnapäring, pakkumised, materjalinimekiri, ostusoov), wants to compare supplier offers with VAT and delivery, or is a supplier answering a BauHunt request or browsing open buying wishes.
 ---
 
 # BauHunt
 
-BauHunt turns a builder's material list into a quote request for Estonian
-suppliers and makes the returned offers comparable. This skill tells you how to
+BauHunt turns a builder's material list into a quote request for suppliers
+and makes the returned offers comparable. Requests are sent to suppliers in
+Estonia today; a delivery place elsewhere in Europe can be chosen, and the
+result says plainly when that area is not served yet. This skill tells you how to
 use the BauHunt connector that ships with this plugin. The connector's own
 instructions and the result of `bauhunt_capabilities` are authoritative; if they
 differ from this text, follow them.
@@ -17,7 +19,7 @@ differ from this text, follow them.
 - Public tools work without sign-in. The user's own requests, offers and company
   records need the user to sign in to their BauHunt account through the
   connector. Never ask for a password, token or private link in the chat.
-- Answer in the user's language. Builders usually write in Estonian.
+- Answer in the user's language.
 
 ## Buyer: from a material list to offers
 

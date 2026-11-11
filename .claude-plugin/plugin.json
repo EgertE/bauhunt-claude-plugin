@@ -2,7 +2,7 @@
   "name": "bauhunt",
   "displayName": "BauHunt",
   "version": "1.0.2",
-  "description": "Prepare construction-material quote requests, manage buying wishes and compare supplier offers in Estonia.",
+  "description": "Ask suppliers for construction-material quotes from your AI chat and compare their offers with delivery, VAT and delivery time. Live in Estonia; more European countries follow.",
   "author": {
     "name": "BauHunt",
     "email": "hunt@bauhunt.ee",
@@ -15,6 +15,7 @@
     "materials",
     "quotes",
     "suppliers",
+    "Europe",
     "Estonia"
   ],
   "icon": "./logo.png",
