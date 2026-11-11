@@ -21,6 +21,13 @@ differ from this text, follow them.
 
 ## Buyer: from a material list to offers
 
+For a returning buyer, `buyer_history` lists their earlier delivery places,
+preferred sellers and repeatedly requested materials. Offer these as
+suggestions ("same place as last time?") and confirm each before saving; never
+reuse a quantity without asking. It shows earlier requests and offers, not
+completed purchases. Keep the buyer's own nicknames and habits (for example a
+site name) in your memory if they ask you to; BauHunt holds only the facts.
+
 1. Take the user's own list as it is: a typed list, a pasted table, product
    links. Pass it to `materials_interpret`. Never invent products, dimensions or
    quantities, and never turn a project area into an ordered quantity.
@@ -36,6 +43,10 @@ differ from this text, follow them.
    user picked.
 5. Save with `request_draft_save`, keep working on the same draft, then call
    `request_preview` and report its actual readiness and saved revision.
+   Where the app supports it, the preview is shown as a card. Its buttons only
+   write the user's wish into the chat (send or change, with the draft and
+   version); they send nothing. A message from the card is the request to send,
+   not acceptance of the terms.
 6. Call `request_submit` only when the user explicitly asks to send, after you
    have shown the current saved revision and summary and the user has accepted
    the current terms. Connecting the account or starting a chat is not consent.
