@@ -1,6 +1,6 @@
 ---
 name: bauhunt
-description: Use when the user wants prices or quotes for construction materials in Estonia, has a material list to send to suppliers (ehitusmaterjalide hinnapäring, pakkumised, materjalinimekiri, ostusoov), wants to compare supplier offers with VAT and delivery, or is a supplier answering a BauHunt request or browsing open buying wishes.
+description: Use when the user wants prices or quotes for construction materials in Estonia, has a material list (typed, photographed or dictated) to send to suppliers (ehitusmaterjalide hinnapäring, pakkumised, materjalinimekiri, ostusoov), wants to compare supplier offers with VAT and delivery, or is a supplier answering a BauHunt request or browsing open buying wishes.
 ---
 
 # BauHunt
@@ -39,8 +39,18 @@ sellers come back by name and company only; do not ask BauHunt for their
 contact details.
 
 1. Take the user's own list as it is: a typed list, a pasted table, product
-   links. Pass it to `materials_interpret`. Never invent products, dimensions or
+   links, a photo or a voice note. Pass it to `materials_interpret`. Never invent products, dimensions or
    quantities, and never turn a project area into an ordered quantity.
+   - A photo, scan, PDF or voice note (a handwritten list, a delivery note, an
+     earlier quote): you read it, BauHunt only gets your text. Write every row
+     down exactly as given (product, size, quantity, unit). Mark a row you
+     cannot read as unreadable and ask about it instead of guessing. Read the
+     whole list back to the builder in plain words and save only after they
+     confirm or correct it.
+   - From a photographed quote take only the materials. Leave out its prices,
+     discounts and totals and never pass them to a seller, into the request or
+     its notes: a price the builder received is confidential. Its seller becomes
+     a preferred or saved seller only if the builder asks.
 2. If the user describes a need instead of a list (for example a 60 m² concrete
    floor), use `materials_interpret` with `inputKind=project_need` and ask at
    most three relevant questions. For load-bearing, fire-safety or other
