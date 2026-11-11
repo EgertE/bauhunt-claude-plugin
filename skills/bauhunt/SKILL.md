@@ -65,8 +65,16 @@ contact details.
    Estonia are a locality or postal code, not a verified street address. When
    a choice says `served: false`, tell the user plainly that BauHunt does not
    send requests to that area yet; the draft is kept.
+   If the user says when the goods are needed ("homseks hommikuks", "by
+   Friday"), turn it into `neededBy` `{date, time}` against
+   `guidance.deadlineCalendar.today` (Europe/Tallinn) from the draft result, or
+   `deadline.calendar` from `bauhunt_capabilities`. Add a time
+   only when the user named or confirmed one; for "hommikuks" propose a time
+   and ask. Say the concrete date back ("Thursday 12.11 at 08:00?"). A deadline
+   is optional; skip it for an open wish or price research.
 5. Save with `request_draft_save`, keep working on the same draft, then call
-   `request_preview` and report its actual readiness and saved revision.
+   `request_preview` and report its actual readiness and saved revision,
+   including the deadline line (`neededBy.text`) when there is one.
    Where the app supports it, the preview is shown as a card. Its buttons only
    write the user's wish into the chat (send or change, with the draft and
    version); they send nothing. A message from the card is the request to send,
@@ -79,13 +87,19 @@ contact details.
    `summary` who, when and the total with VAT and delivery, and list missing
    rows. Say unknown for a missing value, never zero. Never present a partial
    basket as the cheapest complete offer, and never promise stock.
+   With a deadline, the offers come in deadline order: say for each whether it
+   arrives in time, is late (by how many days) or the time is not confirmed,
+   next to the price with delivery. Never call an unconfirmed or unknown time
+   in time; offer the price order (`priceOrderOfferIds`) if the user prefers.
 
 ## Supplier
 
 - `supplier_requests_list` shows the requests the signed-in account may see. An
   empty list means no accessible requests yet, not a broken connection.
 - With manage permission: `supplier_request_get`, then `offer_draft_save` or
-  `offer_import`, then `offer_preview`. Call `offer_submit` only on the user's
+  `offer_import`, then `offer_preview`. When the request has `neededBy`, tell
+  the supplier the deadline first and ask for the date they can deliver
+  (`deliveryDate`), besides the working days. Call `offer_submit` only on the user's
   explicit request and after they accept the supplier terms shown by the
   preview.
 - `supplier_wishes_list` shows open buying wishes to accounts with company
