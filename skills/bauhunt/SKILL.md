@@ -102,6 +102,11 @@ contact details.
    arrives in time, is late (by how many days) or the time is not confirmed,
    next to the price with delivery. Never call an unconfirmed or unknown time
    in time; offer the price order (`priceOrderOfferIds`) if the user prefers.
+   `quickAnswers` (also in `request_get`) lists sellers who answered the
+   deadline with one tap before or without an offer. Say it as "X says they can
+   deliver by then; price not yet given." It is not an offer, a price or a
+   binding promise; report a "cannot" answer neutrally and never say how many
+   sellers were asked.
 
 ## Supplier
 
