@@ -107,6 +107,11 @@ contact details.
    deliver by then; price not yet given." It is not an offer, a price or a
    binding promise; report a "cannot" answer neutrally and never say how many
    sellers were asked.
+   Where the app supports it, the comparison is shown as a card. Its two
+   buttons only write the user's wish into the chat: proceed with one chosen
+   seller (request and offer named) or explain the differences. A proceed
+   message leads to `purchase_intent_preview`; show that preview and send with
+   `purchase_intent_send` only after the user confirms it.
 
 ## Supplier
 
