@@ -1,7 +1,7 @@
 {
   "name": "bauhunt",
   "displayName": "BauHunt",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Ask suppliers for construction-material quotes from your AI chat and compare their offers with delivery, VAT and delivery time. Live in Estonia; more European countries follow.",
   "author": {
     "name": "BauHunt",

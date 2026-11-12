@@ -156,6 +156,13 @@ contact details.
   BauHunt operator's test mailbox and not to the intended recipients.
 - A request whose material list or notes start with the word "test" is a test
   request: its results carry `testRequest` and it never reaches real suppliers.
+- When `realRecipientDelivery` is false, `deliveryReason` and `deliveryNote` say
+  why. "review_account": this is a test (review) account, nothing it sends
+  reaches real suppliers or buyers; when `serviceMode` is `live`, add that with
+  an ordinary account the request goes to suppliers. "test_request": the request
+  is marked as a test. "service_test_mode": the whole service is in test mode
+  right now. Say it in the user's language and plain words; never present a test
+  account as sending that is not ready or something to fix.
 - Only the signed-in account's own records and explicitly authorized company
   records are available. Do not attempt to reach another buyer's or a
   competitor's data.
